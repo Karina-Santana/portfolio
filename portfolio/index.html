@@ -12,7 +12,7 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Karina Santana</title>
+    <title>Karina</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Karina Santana</a>
+                <a href="#" class="nav__logo">Karina</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -54,13 +54,13 @@
         <section class="home bd-grid" id="home">
             <div class="home__data">
                 <h1 class="home__title" id="tagline">
-                    Hi,<br />I am <span class="home__title-color">Karina Santana</span><br />
+                    Hi,<br />I am <span class="home__title-color">Karina</span><br />
                     A <span class="txt-rotate" data-period="2000"
                         data-rotate='[ "Frontend Developer", "Web Developer" ]'>
                     </span>
                 </h1>
 
-                <a href="#contact" class="button">Contact Me</a>
+                <a href="#contact" class="button">Contact Me <i class="uil uil-message"></i></a>
             </div>
 
             <div class="home__social">
@@ -79,6 +79,7 @@
         <!--===== ABOUT =====-->
         <section class="about section" id="about">
             <h2 class="section-title">About</h2>
+            <span class="section__subtitle">My introduction</span>
 
             <div class="about__container bd-grid">
                 <div class="about__img">
@@ -86,9 +87,12 @@
                 </div>
 
                 <div>
-                    <h1 class="about__subtitle" id="tagline">I'm Karina</h1>
+                    <h1 class="about__subtitle" id="tagline">A little about my journey</h1>
 
-                    <p class="about__text">In 2018 I made a decision to change my career and move from
+                    <p class="about__text">I am Brazilian living in Sydney and recently graduated in Software
+                        Engineering from General assembly.
+                        <br> <br>
+                        In 2018 I made a decision to change my career and move from
                         Architecture to something that satisfied me professionally.
                         <br> <br>
                         While I was figuring out what I wanted to do I had a great opportunity to work in a Czech
@@ -98,20 +102,22 @@
                         <br> <br>
                         In January 2022 I moved to Sydney already knowing what I wanted to do. <br>
                         I researched the best
-                        Software Engineering courses in Sydney and found General Assembly's immersive course.
-                        It was three months of intensive course, challenging myself and enjoying the field more every
+                        Software Engineering courses in Sydney and found General Assembly's immersive course quite
+                        interesting.
+                        I enrolled and it was three months of intensive course, challenging myself and enjoying the
+                        field more every
                         day.
                         <br> <br>
-                        What I like the most is the fact that I can use the best parts of Architecture as solving
-                        problems,
-                        building and
-                        designing beautiful things, such as software and interactive interfaces.
-                        <br> <br>
-                        My main professional goal is to find a company where I can learn, grow and feel that I’m
+                        Now my main professional goal is to find a company where I can learn, grow and feel that I’m
                         impacting somehow in people's lives.
                         If you want to know more, feel free to message me - I’d love to chat!
-
                     </p>
+
+                    <div class="about__buttons">
+                        <a download="" href="assets/img/karina-resume.pdf" class="button button--flex" target="_blank">
+                            Download Resume <i class="uil uil-download-alt button__icon"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -119,6 +125,7 @@
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
+            <span class="section__subtitle">My thecnical level</span>
 
             <div class="skills__container bd-grid">
                 <div>
@@ -168,7 +175,7 @@
                 </div>
 
                 <div>
-                    <img src="assets/img/skills.jpg" alt="" class="skills__img">
+                    <img src="assets/img/giphy.gif" alt="" class="skills__img">
                 </div>
             </div>
         </section>
@@ -176,6 +183,7 @@
         <!--===== WORK =====-->
         <section class="work section" id="work">
             <h2 class="section-title">Projects</h2>
+            <span class="section__subtitle">Most recent projects</span>
 
             <div class="work__container bd-grid">
                 <div class="work__img">
@@ -185,13 +193,22 @@
 
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/trip_planner.png" alt="" />
+                    <a href="https://gentle-castle-11768.herokuapp.com/" target="_blank">
+                        <img src="./assets/img/trip_planner.png" alt="" />
+                    </a>
+
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/inspiration_boards.png" alt="" />
+                    <a href="https://nameless-mountain-77703.herokuapp.com/" target="_blank">
+                        <img src="./assets/img/inspiration_boards.png" alt="" />
+                    </a>
+
                 </div>
                 <div class="work__img">
-                    <img src="./assets/img/tictactoe.png" alt="" />
+                    <a href="https://karina-santana.github.io/tic-tac-toe/" target="_blank">
+                        <img src="./assets/img/tictactoe.png" alt="" />
+                    </a>
+
                 </div>
             </div>
         </section>
@@ -199,38 +216,52 @@
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
+            <span class="section__subtitle">Get in touch</span>
+
             <div class="container1">
-
                 <div class="screen-body">
-
                     <div class="screen-body-item left">
-                        <a href="mailto:karinasantanaarq@gmail.com" target="_blank"><i
-                                class="far fa-envelope text-2xl md:text-5xl p-6 hover:text-yellow-500"></i></a>
+                        <div class="contact__info">
+                            <i class="uil uil-phone-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+61 0473 082 913</span>
+                            </div>
+                        </div>
 
-                        <a href="https://github.com/Karina-Santana" target="_blank"><i
-                                class="fab fa-github text-2xl md:text-5xl p-6 hover:text-black-100"></i></a>
+                        <div class="contact__info">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">karinasantanaarq@gmail.com</span>
+                            </div>
+                        </div>
 
-                        <a href="https://www.linkedin.com/in/karinasantanadasilva/" target="_blank"><i
-                                class="fab fa-linkedin text-2xl md:text-5xl p-6 hover:text-blue-400"></i></a>
-
+                        <div class="contact__info">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Sydney - Australia</span>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="screen-body-item">
                         <div class="app-form">
-                            <div class="app-form-group">
-                                <input class="app-form-control" placeholder="NAME">
+                            <div class="app-form-group name">
+                                <input class="app-form-control" placeholder="Name">
                             </div>
-                            <div class="app-form-group">
-                                <input class="app-form-control" placeholder="EMAIL">
+                            <div class="app-form-group email">
+                                <input class="app-form-control" placeholder="Email">
                             </div>
-                            <div class="app-form-group">
-                                <input class="app-form-control" placeholder="CONTACT NO">
+                            <div class="app-form-group subject">
+                                <input class="app-form-control" placeholder="Subject">
                             </div>
                             <div class="app-form-group message">
-                                <input class="app-form-control" placeholder="MESSAGE">
+                                <input class="app-form-control" placeholder="Message">
                             </div>
                             <div class="app-form-group buttons">
-                                <button class="app-form-button">CANCEL</button>
-                                <button class="app-form-button">SEND</button>
+                                <button class="app-form-button">Send message <i class="uil uil-message"></i></button>
                             </div>
                         </div>
                     </div>
@@ -250,7 +281,6 @@
             <a href="https://github.com/Karina-Santana" class="footer__icon" target="_blank"><i
                     class="uil uil-github-alt"></i></a>
         </div>
-        <p>&#169; 2021 copyright all right reserved</p>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->

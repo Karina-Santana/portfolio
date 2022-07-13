@@ -1,7 +1,4 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*===== VARIABLES CSS =====*/
@@ -12,7 +9,8 @@
 
 /*===== Colores =====*/
 :root {
-  --first-color: rgb(88, 3, 167);
+  --hue-color: 250;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
   --second-color: #8c8c8c;
 }
 
@@ -94,13 +92,21 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: black;
   margin-top: var(--mb-2);
-  margin-bottom: var(--mb-4);
+  margin-bottom: 0px;
   text-align: center;
 }
 
-.section-title::after {
+.section__subtitle {
+  display: block;
+  font-size: .813rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-top: -45px;
+}
+
+/* .section-title::after {
   position: absolute;
   content: "";
   width: 64px;
@@ -110,7 +116,7 @@ img {
   margin: auto;
   top: 2rem;
   background-color: var(--first-color);
-}
+} */
 
 .section {
   padding-top: 3rem;
@@ -288,6 +294,22 @@ img {
   font-weight: 300;
 }
 
+.about__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.portfolio__button:hover .button__icon {
+  transform: translateX(.25rem);
+}
+
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
@@ -381,12 +403,16 @@ img {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
+  align-self: center;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .screen-body {
   display: flex;
-  background-color: rgb(178, 131, 221);
+  background-color: white;
   border-radius: 0px;
+  row-gap: 3rem;
 }
 
 .screen-body:hover {
@@ -400,7 +426,30 @@ img {
 
 .screen-body-item.left {
   flex-direction: column;
-  color: white;
+  color: var(--first-color);
+  row-gap: 3rem;
+}
+
+.contact__info {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.contact__icon {
+  color: var(--first-color);
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.contact__title {
+  font-size: 1.25rem;
+  font-weight: var(--font-medium);
+  color: black;
+}
+
+.contact__subtitle {
+  font-size: .875rem;
+  color: rgb(177, 177, 177);
 }
 
 .app-contact {
@@ -409,8 +458,24 @@ img {
   color: rgb(255, 255, 255);
 }
 
-.app-form-group {
+.app-form-group.name,
+.app-form-group.email,
+.app-form-group.subject,
+.app-form-group.message {
   margin-bottom: 15px;
+  background-color: rgb(241, 237, 244);
+  border-radius: 0.5rem;
+  padding: 15px 10px 15px 10px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 15px;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .app-form-group.message {
@@ -427,16 +492,15 @@ img {
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(181, 181, 181);
   color: rgb(0, 0, 0);
   font-size: 14px;
-  text-transform: uppercase;
   outline: none;
   transition: border-color .2s;
 }
 
 .app-form-control::placeholder {
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 .app-form-control:focus {
@@ -449,7 +513,6 @@ img {
   font-size: 18px;
   cursor: pointer;
   outline: none;
-  font-weight: 900;
   padding: 10px 15px;
 }
 
@@ -504,10 +567,6 @@ img {
   margin-bottom: var(--mb-4);
 }
 
-.footer__social {
-  margin-bottom: var(--mb-4);
-}
-
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
@@ -527,6 +586,8 @@ img {
 
   .section-title {
     margin-bottom: var(--mb-6);
+    font-size: 2.25rem;
+    font-weight: 600;
   }
 
   .section-title::after {
