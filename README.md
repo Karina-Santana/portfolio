@@ -1,3 +1,3 @@
 # Karina Portfolio
 
-<a href="#">Click here to check it out</a>
+<a href="https://karina-santana.github.io/portfolio/">Click here to check it out</a>
