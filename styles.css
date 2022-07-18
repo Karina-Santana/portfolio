@@ -454,10 +454,6 @@ img {
   padding-bottom: 5px;
 }
 
-.app-form-group.message {
-  margin-top: 40px;
-}
-
 .app-form-group.buttons {
   margin-bottom: 0;
   text-align: center;
@@ -515,10 +511,6 @@ img {
   font-size: 1.5rem;
   color: #fff;
   margin: 0 var(--mb-2)
-}
-
-.thank-you {
-  margin: auto;
 }
 
 /* ===== MEDIA QUERIES=====*/

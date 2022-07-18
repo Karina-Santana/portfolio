@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    cursor: url('img/cursor.png'), auto;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thank__you {
+    color: #8c8c8c;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.portfolio__link {
+    color: hsl(250, 69%, 61%);
+    font-weight: 400;
+}
