@@ -231,10 +231,6 @@ img {
   width: 295px;
 }
 
-.section__subtitle {
-  margin-top: 0px;
-}
-
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -270,11 +266,12 @@ img {
 
 .about__text {
   font-weight: 300;
+  margin-bottom: 10px;
 }
 
 .about__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 10px;
 }
 
@@ -294,7 +291,9 @@ img {
   text-align: center;
   display: grid;
   grid-auto-flow: column;
-  margin-left: var(--mb-2);
+  margin-left: 15%;
+  margin-right: 10%;
+  gap: 30px;
 }
 
 .skills__subtitle {
@@ -360,7 +359,7 @@ img {
 }
 
 .work__img {
-  box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+  box-shadow: 0 5px 25px rgba(14, 36, 49, 0.188);
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -518,9 +517,13 @@ img {
   margin: 0 var(--mb-2)
 }
 
+.thank-you {
+  margin: auto;
+}
+
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 768px){
-  :root{
+@media screen and (min-width: 768px) {
+  :root {
     --big-font-size: 3.5rem;
     --h2-font-size: 2rem;
     --normal-font-size: 1rem;
@@ -558,6 +561,12 @@ img {
   .home__title {
     font-size: 2rem;
   }
+
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
 }
 
 @media screen and (max-width: 725px) {
@@ -584,6 +593,7 @@ img {
   .home__title {
     font-size: 2rem;
   }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -614,7 +624,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .screen-body {
-    padding: 40px;
+    padding: 0px 5px 40px 5px;
   }
 
   .screen-body-item {
@@ -694,6 +704,16 @@ img {
     margin-top: -114px;
   }
 
+  .section__subtitle {
+    margin-top: 0px;
+  }
+
+  .section-title {
+    margin-bottom: 2px;
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
   .contact__title {
     font-size: 1rem;
   }
@@ -727,7 +747,7 @@ img {
   }
 
   .section-title {
-    margin-bottom: var(--mb-6);
+    margin-bottom: 0px;
     font-size: 2.25rem;
     font-weight: 600;
   }
@@ -780,8 +800,10 @@ img {
   }
 
   .home__img {
-    width: 457px;
+    width: 400px;
     bottom: 36%;
+    right: -5%;
+    bottom: 39%;
   }
 
   .about__container,
@@ -808,7 +830,18 @@ img {
   .contact__container {
     justify-items: center;
   }
+
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 2.25rem;
+    font-weight: 600;
+  }
+
+  .screen-body-item {
+    padding: 30px 150px;
+  }
 }
+
 
 @media screen and (min-width: 1024px) {
   .bd-grid {
@@ -818,10 +851,16 @@ img {
 
   .home__img {
     right: 5%;
-    bottom: 25%;
+    bottom: 39%;
   }
 
   .screen-body-item {
-    padding: 30px 20px;
+    padding: 30px 350px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+    font-size: 2.25rem;
+    font-weight: 600;
   }
 }
