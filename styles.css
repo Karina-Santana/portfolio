@@ -522,7 +522,7 @@ img {
 
 .app-form-button:hover {
   color: rgb(206, 206, 206);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .contact.section,
@@ -569,6 +569,14 @@ img {
     padding: 2rem;
     background-color: #cbcbcb;
     transition: .5s;
+  }
+
+  #nav-menu {
+    background-color: var(--second-color);
+    right: 0;
+    display: none;
+    height: fit-content;
+    width: 40%;
   }
 
   .skills__img {
@@ -680,6 +688,10 @@ img {
 }
 
 @media screen and (max-width: 550px) {
+  #nav-menu {
+    width: 60%;
+  }
+
   .screen-body {
     flex-direction: column;
     padding-bottom: 0px;
@@ -763,9 +775,18 @@ img {
     font-size: 14px;
   }
 
+  .app-form-button:hover {
+    color: rgb(206, 206, 206);
+    font-size: 14px;
+  }
+
   .footer__title {
     font-size: 1rem;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
+  }
+
+  .footer__icon {
+    font-size: 0.8rem;
   }
 }
 
