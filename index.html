@@ -44,7 +44,7 @@
                 </ul>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
+            <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
                 <i class="bx bx-menu"></i>
             </div>
         </nav>
@@ -71,9 +71,9 @@
 
             <div class="home__social">
                 <a href="https://www.linkedin.com/in/karinasantanadasilva/" class="home__social-icon" target="_blank"><i
-                        class="uil uil-linkedin-alt"></i></i></a>
+                        class="uil uil-linkedin-alt"></i><span class="social__text">LinkedIn</span></a>
                 <a href="https://github.com/Karina-Santana" class="home__social-icon" target="_blank"><i
-                        class="uil uil-github-alt"></i></a>
+                        class="uil uil-github-alt"></i><span class="social__text">Github</span></a>
             </div>
 
             <div class="home__img">
@@ -119,7 +119,7 @@
                         If you want to know more, feel free to message me - I’d love to chat!
                     </p>
 
-                    <a href="#contact" class="button">Contact Me <i class="uil uil-message"></i></a>
+                    <a href="#contact" class="button">Contact Me <i class="uil uil-message button__icon"></i></a>
                 </div>
             </div>
         </section>
@@ -155,24 +155,6 @@
                             <span class="skills__name">Ruby</span>
                         </div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-adobe skills__icon'></i>
-                            <span class="skills__name">Adobe Illustrator</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class="bx bxs-paint skills__icon"></i>
-                            <span class="skills__name">SketchUp</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-cross skills__icon'></i>
-                            <span class="skills__name">AutoCAD</span>
-                        </div>
-                    </div>
                 </div>
 
                 <div>
@@ -187,30 +169,75 @@
             <span class="section__subtitle">Most recent projects</span>
 
             <div class="work__container bd-grid">
-                <div class="work__img">
-                    <a href="https://lovely-petrified-forest-38623.herokuapp.com/" target="_blank">
-                        <img src="./img/ecommerce.png" alt="" />
-                    </a>
+                <div>
+                    <div class="work__img">
+                        <a href="https://lovely-petrified-forest-38623.herokuapp.com/" target="_blank">
+                            <img src="./img/ecommerce.png" alt="" />
+                        </a>
+                    </div>
+                    <p class="description__project"><strong>Tech stack: </strong>React JS, HTML, CSS, Node, Express,
+                        REST API, PostgresSQL.</p>
+                    <div class="project__links">
+                        <a href="https://github.com/Karina-Santana/ecommerce_app"><i class="uil uil-github-alt"></i>
+                            Code</a>
+                        <a href="https://lovely-petrified-forest-38623.herokuapp.com/"><i class="uil uil-desktop"></i>
+                            Demo</a>
+                    </div>
 
                 </div>
-                <div class="work__img">
-                    <a href="https://gentle-castle-11768.herokuapp.com/" target="_blank">
-                        <img src="./img/trip_planner.png" alt="" />
-                    </a>
 
-                </div>
-                <div class="work__img">
-                    <a href="https://nameless-mountain-77703.herokuapp.com/" target="_blank">
-                        <img src="./img/inspiration_boards.png" alt="" />
-                    </a>
+                <div>
+                    <div class="work__img">
+                        <a href="https://gentle-castle-11768.herokuapp.com/" target="_blank">
+                            <img src="./img/trip_planner.png" alt="" />
+                        </a>
 
+                    </div>
+                    <p class="description__project"><strong>Tech stack: </strong>HTML, CSS, Node, Express,
+                        REST API, PostgresSQL.</p>
+                    <div class="project__links">
+                        <a href="https://github.com/Karina-Santana/Travel_app"><i class="uil uil-github-alt"></i>
+                            Code</a>
+                        <a href="https://gentle-castle-11768.herokuapp.com/"><i class="uil uil-desktop"></i>
+                            Demo</a>
+                    </div>
                 </div>
-                <div class="work__img">
-                    <a href="https://karina-santana.github.io/tic-tac-toe/" target="_blank">
-                        <img src="./img/tictactoe.png" alt="" />
-                    </a>
 
+                <div>
+                    <div class="work__img">
+                        <a href="https://nameless-mountain-77703.herokuapp.com/" target="_blank">
+                            <img src="./img/inspiration_boards.png" alt="" />
+                        </a>
+
+                    </div>
+                    <p class="description__project"><strong>Tech stack: </strong>Sinatra, Ruby, HTML, CSS, PostgresSQL.
+                    </p>
+                    <div class="project__links">
+                        <a href="https://github.com/Karina-Santana/inspiration-boards"><i
+                                class="uil uil-github-alt"></i>
+                            Code</a>
+                        <a href="https://nameless-mountain-77703.herokuapp.com/"><i class="uil uil-desktop"></i>
+                            Demo</a>
+                    </div>
                 </div>
+
+                <div>
+                    <div class="work__img">
+                        <a href="https://karina-santana.github.io/tic-tac-toe/" target="_blank">
+                            <img src="./img/tictactoe.png" alt="" />
+                        </a>
+
+                    </div>
+                    <p class="description__project"><strong>Tech stack: </strong>Sinatra, Ruby, HTML, CSS, PostgresSQL.
+                    </p>
+                    <div class="project__links">
+                        <a href="https://github.com/Karina-Santana/tic-tac-toe"><i class="uil uil-github-alt"></i>
+                            Code</a>
+                        <a href="https://karina-santana.github.io/tic-tac-toe/"><i class="uil uil-desktop"></i>
+                            Demo</a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -227,12 +254,12 @@
                             <div class="app-form-group name">
                                 <input class="app-form-control" placeholder="Name" type="text" name="name" required>
                             </div>
+                            <div class="app-form-group email">
+                                <input class="app-form-control" placeholder="Email" type="email" name="email" required>
+                            </div>
                             <div class="app-form-group subject">
                                 <input class="app-form-control" placeholder="Subject" type="text" name="subject"
                                     required>
-                            </div>
-                            <div class="app-form-group email">
-                                <input class="app-form-control" placeholder="Email" type="email" name="email" required>
                             </div>
                             <div class="app-form-group message">
                                 <input class="app-form-control" placeholder="Message" type="text" name="message"
@@ -243,7 +270,7 @@
                             <input type="hidden" name="_subject" value="New email woooo!">
                             <div class="app-form-group buttons">
                                 <button type="submit" class="app-form-button">Send message <i
-                                        class="uil uil-message"></i></button>
+                                        class="uil uil-message button__icon"></i></button>
                             </div>
                         </form>
                     </div>
@@ -259,9 +286,9 @@
         <p class="footer__title">Karina Santana</p>
         <div class="footer__social">
             <a href="https://www.linkedin.com/in/karinasantanadasilva/" class="footer__icon" target="_blank"><i
-                    class="uil uil-linkedin-alt"></i></a>
+                    class="uil uil-linkedin-alt"></i> LinkedIn</a>
             <a href="https://github.com/Karina-Santana" class="footer__icon" target="_blank"><i
-                    class="uil uil-github-alt"></i></a>
+                    class="uil uil-github-alt"></i> Github</a>
         </div>
     </footer>
 
@@ -328,6 +355,15 @@
             css.innerHTML = ".txt-rotate > .wrap { border-right: 0.09em solid black }";
             document.body.appendChild(css);
         };
+
+        function showMenu() {
+            let menu = document.getElementById("nav-menu")
+            if (menu.style.display === "none") {
+                menu.style.display = "block"
+            } else {
+                menu.style.display = "none"
+            }
+        }
     </script>
 </body>
 

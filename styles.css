@@ -80,6 +80,11 @@ img {
   display: block;
 }
 
+.uil-download-alt:before,
+.uil-message:before {
+  margin-left: 0.5rem;
+}
+
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -137,7 +142,8 @@ img {
 .skills__img {
   border-radius: .5rem;
   margin: auto;
-  height: 400px;
+  height: 300px;
+  margin-bottom: var(--mb-4);
 }
 
 .nav__item {
@@ -211,6 +217,7 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
+  margin-top: -32px;
 }
 
 .home__social-icon {
@@ -222,6 +229,12 @@ img {
 
 .home__social-icon:hover {
   color: var(--first-color);
+}
+
+.social__text {
+  color: var(--second-color);
+  font-size: 1rem;
+  margin-left: 10px;
 }
 
 .home__img {
@@ -276,8 +289,8 @@ img {
 }
 
 .button__icon {
-  font-size: 1.25rem;
-  margin-left: var(--mb-0-5);
+  font-size: 1.50rem;
+  margin-left: 1 rem;
   transition: .3s;
 }
 
@@ -367,11 +380,30 @@ img {
 .work__img img {
   transition: 1s;
   cursor: pointer;
-  height: 100%;
+  height: 300px;
 }
 
 .work__img img:hover {
   transform: scale(1.1);
+}
+
+.project__links {
+  margin-bottom: 20px;
+  color: var(--first-color);
+  text-align: center;
+  font-size: 15px;
+}
+
+.uil-desktop {
+  margin-left: 20px;
+}
+
+.description__project {
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 13px;
 }
 
 /* ===== CONTACT =====*/
@@ -493,10 +525,15 @@ img {
   font-size: 20px;
 }
 
+.contact.section,
+.work.section {
+  margin-top: -50px;
+}
+
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--first-color);
-  color: #fff;
+  color: white;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -508,8 +545,8 @@ img {
 }
 
 .footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 1.2rem;
+  color: white;
   margin: 0 var(--mb-2)
 }
 
@@ -680,6 +717,10 @@ img {
     top: 10%;
   }
 
+  .work__img img {
+    height: 100%;
+  }
+
   .home__title {
     font-size: 1.2rem;
   }
@@ -693,7 +734,7 @@ img {
   }
 
   .section__title__about {
-    margin-top: -114px;
+    margin-top: -40px;
   }
 
   .section__subtitle {
@@ -782,7 +823,7 @@ img {
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
-    flex-direction: row;
+    flex-direction: column;
     align-self: flex-end;
   }
 
@@ -810,7 +851,7 @@ img {
   }
 
   .work__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
