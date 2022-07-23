@@ -45,7 +45,7 @@
             </div>
 
             <div class="nav__toggle" id="nav-toggle" onclick="showMenu()">
-                <i class="bx bx-menu"></i>
+                <i class="uil uil-bars" onclick="changeIcon(this)"></i>
             </div>
         </nav>
     </header>
@@ -358,13 +358,19 @@
 
         function showMenu() {
             let menu = document.getElementById("nav-menu")
-            if (menu.style.display === "none") {
-                menu.style.display = "block";
-            } else {
+
+            if (menu.style.display === "block") {
                 menu.style.display = "none";
+
+            } else {
+                menu.style.display = "block";
+
             }
         }
 
+        function changeIcon(x) {
+            x.classList.toggle("uil-times");
+        }
     </script>
 </body>
 
